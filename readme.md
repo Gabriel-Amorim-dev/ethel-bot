@@ -7,12 +7,12 @@ A Discord bot that replies with lyrics when a song written by Ethel Cain (Hayden
 3. Create a `.env` file:
 DISCORD_TOKEN=your_discord_token
 GENIUS_TOKEN=your_genius_api_token
-4. Open `bot.py` and edit the section at the top:
+4. Open `main.py` and edit the section at the top:
 - `ARTIST` — the artist name
 - `SONGS` — list of song titles to watch for
 - `EMBED_COLOR` — hex color for the embed sidebar
 - `REACTION_EMOJI` — emoji the bot reacts with
-5. Run: `python bot.py`
+5. Run: `python main.py`
 
 ## Getting your tokens
 - **Discord:** https://discord.com/developers/applications
