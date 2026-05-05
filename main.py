@@ -12,6 +12,11 @@ load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 GENIUS_TOKEN = os.getenv("GENIUS_TOKEN")
 
+if not GENIUS_TOKEN:
+    raise ValueError("GENIUS_ACCESS_TOKEN não definido!")
+
+genius = lyricsgenius.Genius(GENIUS_TOKEN)
+
 genius = lyricsgenius.Genius(GENIUS_TOKEN, skip_non_songs=True, excluded_terms=["(Remix)", "Live"],timeout=15,retries=3)
 genius.verbose= False
 
